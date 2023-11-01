@@ -1,0 +1,10 @@
+javac lesson1.java java sec1.Main##Notes
+
+This code appears to be a set of terminal commands written in Java.
+
+The first command,`javac lesson1.java`,is used to compile the`lesson1.java`file.This command will generate a`.class`file,which contains the bytecode for the Java program.
+
+The second command,`java sec1.Main`,is used to run the compiled Java program.This command will execute the`Main`class in the `sec1` package.
+
+It's worth noting that this code assumes that the `lesson1.java` file has already been written and saved in the correct directory.
+ Additionally, the `sec1.Main` class must exist and contain a `main` method in order for the program to run successfully.

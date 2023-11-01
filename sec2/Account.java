@@ -1,3 +1,5 @@
+package sec2; // package declaration
+
 class Account {
     String owner;
     double balance;

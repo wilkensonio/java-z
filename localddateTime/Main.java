@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         LocalDateDemo localDateDemo = new LocalDateDemo();
-//
+
         LocalDate date1 = LocalDateDemo.localDate1;
         System.out.println("LocalDate.now() : " + date1);
 

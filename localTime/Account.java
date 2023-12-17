@@ -1,4 +1,4 @@
-package sec2; // package declaration
+package localTime; // package declaration
 
 class Account {
     String owner;

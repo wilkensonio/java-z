@@ -1,0 +1,4 @@
+Class content
+data also known as variables, properties, but also constatns.
+actions 
+actionsm sometimes called functions.

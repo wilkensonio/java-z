@@ -3,7 +3,9 @@ package functional;
 
 import java.io.FilterOutputStream;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -39,6 +41,8 @@ public class MethodRefExam {
 
 //        summ of squares
         SumOfSquaresExample.sumOfSquares();
+//        MaximumValueExample
+        MaximumValueExample.maxValue();
 
     }
 
@@ -80,11 +84,27 @@ public class MethodRefExam {
     static class SumOfSquaresExample {
         public static void sumOfSquares() {
             List<Integer> sumSqr = Arrays.asList(3, 1, 2, 23, 5, 5, 10, 785, 4, 8, 9, 5, 45, 44, 8);
-            long sum = sumSqr.stream()
+            int sum = sumSqr.stream()
                     .map(n -> n * n)
                     .reduce(0, Integer::sum);
 
             System.out.println(sum); //621129
+
+        }
+    }
+
+    static class MaximumValueExample {
+        public static void maxValue() {
+            List<Integer> val = Arrays.asList(9, 9, 21);
+            Optional<Integer> value = val.stream()
+                            .max(Integer::compareTo);
+
+            System.out.println(value.get() + " max");
+//                    .
+
+
+
+
 
         }
     }

@@ -37,6 +37,9 @@ public class MethodRefExam {
 //        lambda
         LoopToForEachExample.loopToEach();
 
+//        summ of squares
+        SumOfSquaresExample.sumOfSquares();
+
     }
 
     static class TerminalOperation {
@@ -64,13 +67,25 @@ public class MethodRefExam {
     }
 
     static class LoopToForEachExample {
-        public static void loopToEach(){
+        public static void loopToEach() {
             List<String> str = Arrays.asList("wilkenosn", "hilarion");
             for (String s : str) {
                 System.out.println(s);
             }
             // use foreach and lambda exp
             str.forEach(s -> System.out.println(s));
+        }
+    }
+
+    static class SumOfSquaresExample {
+        public static void sumOfSquares() {
+            List<Integer> sumSqr = Arrays.asList(3, 1, 2, 23, 5, 5, 10, 785, 4, 8, 9, 5, 45, 44, 8);
+            long sum = sumSqr.stream()
+                    .map(n -> n * n)
+                    .reduce(0, Integer::sum);
+
+            System.out.println(sum); //621129
+
         }
     }
 }

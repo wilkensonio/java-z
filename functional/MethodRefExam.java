@@ -100,12 +100,6 @@ public class MethodRefExam {
                             .max(Integer::compareTo);
 
             System.out.println(value.get() + " max");
-//                    .
-
-
-
-
-
         }
     }
 }
